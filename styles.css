@@ -2,7 +2,7 @@ body, html{
   height:100%;
 }
 body{
-  margin: 0px; 
+  margin: 0;
   background-color:#444;
   font-size: 18px;
 }
@@ -20,8 +20,14 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+.BlinkyDancer{
   border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.CrazyDancer{
+  border:10px solid green;
   border-radius:10px;
   position:absolute;
 }
