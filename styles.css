@@ -3,8 +3,11 @@ body, html{
 }
 body{
   margin: 0;
-  background-color:#444;
+  background-color:#fff;
   font-size: 18px;
+}
+body:hover{
+  background-color: #e8e8e8;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -15,19 +18,43 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: #2b2b2b;
+  box-shadow: 3px 0px 7px #000;
+  padding-right: 20px;
 }
 .title{
   background-color: #777;
 }
 .BlinkyDancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
 .CrazyDancer{
-  border:10px solid green;
-  border-radius:10px;
   position:absolute;
+  -webkit-animation: crazy .5s infinite linear;
+  /*
+      transform: translate(350px,0);
+      duration: 'slow';
+      easing: 'easeOutBounce';
+    -webkit-transform: translate(-350px,0); */
+}
+
+.LazyDancer{
+  border:0 solid blue;
+  border-radius:0;
+  position:absolute;
+  -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+
+@-webkit-keyframes crazy {
+    0%  {-webkit-transform: rotate(25deg);}
+    50% {-webkit-transform: rotate(-25deg);}
+    50%  {-webkit-transform: rotate(-25deg);}
+    100% {-webkit-transform: rotate(25deg);}
+
 }

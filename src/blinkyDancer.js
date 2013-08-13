@@ -1,5 +1,5 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps){
-  this.$node = $('<span class="BlinkyDancer"></span>');
+  this.$node = $('<span class="BlinkyDancer"><img src="http://hackreactor.com/wp-content/uploads/2012/10/Anthony.png" height="100px" width="100px"</span>');
   Dancer.apply(this, arguments);
 };
 
