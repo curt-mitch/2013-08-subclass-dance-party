@@ -21,6 +21,7 @@
     <script>
       $(document).ready(function(){
         window.dancers = [];
+        var snd = new Audio("http://www.wavsource.com/snds_2013-08-11_5845952360593094/animals/goat.wav");
 
         $(".addDancerButton").on("click", function(event){
           /* This function sets up the click handlers for the create-dancer
@@ -47,8 +48,10 @@
             $("body").width() * Math.random(),
             Math.random() * 1000
           );
-
           $('body').append(dancer.$node);
+        });
+        $('[data-dancer-maker-function-name="CrazyDancer"]').on("click", function(event){
+          snd.play();
         });
       });
     </script>
